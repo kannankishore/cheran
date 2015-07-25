@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sasi</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+ <p class="notice"><%= notice %></p>
+       <p class="alert"><%= alert %></p>
+
+<%= link_to "sign up", new_user_registration_path %>
+
+<%= link_to "sign in", new_user_session_path %>
+
+  <div class="navbar">
+   <div class="navbar-inner">
+    <a class="brand" href="#">Just Did it</a> </div> </div> 
+
+<%= yield %>
+
+</body>
+</html>
